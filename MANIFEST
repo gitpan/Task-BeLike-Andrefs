@@ -1,11 +1,12 @@
 Changes
+LICENSE
 MANIFEST
+META.yml
 Makefile.PL
 README
+dist.ini
 lib/Task/BeLike/Andrefs.pm
-t/00-load.t
-t/manifest.t
-t/pod-coverage.t
-t/pod.t
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
+t/author-critic.t
+t/release-check-changes.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t

@@ -1,27 +1,29 @@
 ---
-abstract: 'Install the CPAN modules used by andrefs.'
+abstract: 'For all the AndreFS wanna-bes'
 author:
   - 'Andre Santos <andrefs@cpan.org>'
-build_requires:
-  ExtUtils::MakeMaker: 0
+build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 0
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150'
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Task-BeLike-Andrefs
-no_index:
-  directory:
-    - t
-    - inc
 requires:
+  App::Nopaste: 0
+  App::TeXMine: 0
   App::pmuninstall: 0
   Biblio::Thesaurus: 0
+  Bundle::BioPerl: 0
+  CPAN::SQLite: 0
   Catalyst::Example::Controller::InstantCRUD: 0
+  Catalyst::Plugin::Redirect: 0
   Catalyst::Plugin::Unicode: 0
+  Chart::Clicker: 0
+  Clipboard: 0
   DBIx::Class::EncodedColumn: 0
   DBIx::Class::TimeStamp: 0
   DBIx::Migration: 0
@@ -44,9 +46,14 @@ requires:
   HTML::Entities: 0
   Inline::Files: 0
   Lingua::PT::PLN: 0
+  Module::CoreList: 0
   Module::Starter: 0
   MooseX::Types::JSON: 0
   MooseX::Types::Path::Class: 0
+  OBO::Parser::OBOParser: 0
+  Perl::Critic: 0
+  Perl::Tidy: 0
+  String::Approx: 0
   Task::Catalyst::Tutorial: 0
   Task::Dancer: 0
   Task::Kensho: 0
@@ -61,11 +68,19 @@ requires:
   Term::ReadKey: 0
   Term::ReadLine::Perl: 0
   Test::More: 0
+  Test::Pod: 0
   Text::CSV: 0
+  Text::Perfide::BookCleaner: 0
+  Text::Perfide::BookPairs: 0
+  Text::Perfide::BookSync: 0
+  Text::Perfide::PartialAlign: 0
   Text::RewriteRules: 0
   TheSchwartz::Job: 0
   XML::Entities: 0
   XML::Twig: 0
-  corelist: 0
+  YAML::AppConfig: 0
   utf8::all: 0
-version: 0.04_01
+resources:
+  homepage: http://search.cpan.org/dist/Task-BeLike-Andrefs/
+  repository: http://github.com/andrefs/task-belike-andrefs.git
+version: 0.05_02

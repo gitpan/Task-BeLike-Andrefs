@@ -1,41 +1,36 @@
-package Task::BeLike::Andrefs;
-
-use warnings;
 use strict;
+use warnings;
+package Task::BeLike::Andrefs;
+{
+  $Task::BeLike::Andrefs::VERSION = '0.05_02';
+}
 
-our $VERSION = '0.04_01';
+# ABSTRACT: For all the AndreFS wanna-bes
 
 1;
 
-=head1 SYNOPSIS
 
-Task::BeLike::Andrefs - Install the CPAN modules used by andrefs.
+__END__
+=pod
 
-Perhaps a little code snippet.
+=head1 NAME
 
-    use Task::BeLike::Andrefs;
+Task::BeLike::Andrefs - For all the AndreFS wanna-bes
 
-    my $foo = Task::BeLike::Andrefs->new();
-    ...
+=head1 VERSION
+
+version 0.05_02
 
 =head1 AUTHOR
 
-Andre Santos, C<< <andrefs at cpan.org> >>
+Andre Santos <andrefs@cpan.org>
 
-=head1 BUGS
+=head1 COPYRIGHT AND LICENSE
 
-Please report any bugs or feature requests to C<bug-task-belike-andrefs at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-BeLike-Andrefs>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+This software is copyright (c) 2011 by Andre Santos.
 
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2011 Andre Santos.
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
+=cut
 
