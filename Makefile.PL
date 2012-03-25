@@ -88,7 +88,7 @@ my %WriteMakefileArgs = (
     "YAML::AppConfig" => 0,
     "utf8::all" => 0
   },
-  "VERSION" => "0.05_12",
+  "VERSION" => "0.05_13",
   "test" => {
     "TESTS" => "t/*.t"
   }

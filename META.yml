@@ -83,4 +83,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Task-BeLike-Andrefs/
   repository: http://github.com/andrefs/task-belike-andrefs.git
-version: 0.05_12
+version: 0.05_13
