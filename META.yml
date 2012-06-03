@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630'
+generated_by: 'Dist::Zilla version 4.300016, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,6 +19,7 @@ requires:
   Biblio::Thesaurus: 0
   Bundle::BioPerl: 0
   CPAN::SQLite: 0
+  CPAN::Uploader: 0
   Catalyst::Example::Controller::InstantCRUD: 0
   Catalyst::Plugin::Redirect: 0
   Catalyst::Plugin::Unicode: 0
@@ -42,17 +43,42 @@ requires:
   Devel::REPL::Plugin::OutputCache: 0
   Devel::REPL::Plugin::Packages: 0
   Devel::REPL::Plugin::ReadLineHistory: 0
+  Dist::Zilla: 0
+  Dist::Zilla::MintingProfile::Author::Andrefs: 0
+  Dist::Zilla::Plugin::AutoPrereqs: 0
+  Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes: 0
+  Dist::Zilla::Plugin::CheckChangesHasContent: 0
+  Dist::Zilla::Plugin::FakeRelease: 0
+  Dist::Zilla::Plugin::Git::NextVersion: 0
+  Dist::Zilla::Plugin::MetaResourcesFromGit: 0
+  Dist::Zilla::Plugin::PkgVersion: 0
+  Dist::Zilla::Plugin::PodCoverageTests: 0
+  Dist::Zilla::Plugin::PodSyntaxTests: 0
+  Dist::Zilla::Plugin::PodWeaver: 0
+  Dist::Zilla::Plugin::Test::CheckChanges: 0
+  Dist::Zilla::Plugin::Test::Perl::Critic: 0
+  Dist::Zilla::PluginBundle::Basic: 0
+  Dist::Zilla::PluginBundle::Filter: 0
+  Dist::Zilla::PluginBundle::Git: 0
   HTML::Auto: 0
   HTML::Entities: 0
   Inline::Files: 0
+  Lingua::EN::Sentence::Offsets: 0
+  Lingua::EN::Tokenizer::Offsets: 0
+  Lingua::Identify: 0
   Lingua::PT::PLN: 0
   Module::CoreList: 0
+  Module::Rename: 0
   Module::Starter: 0
+  Mojolicious::Plugin::YamlConfig: 0
+  MooseX::Declare: 0
   MooseX::Types::JSON: 0
   MooseX::Types::Path::Class: 0
   OBO::Parser::OBOParser: 0
   Perl::Critic: 0
   Perl::Tidy: 0
+  Pod::Elemental::Transformer::List: 0
+  Pod::Weaver::Plugin::Encoding: 0
   String::Approx: 0
   Task::Catalyst::Tutorial: 0
   Task::Dancer: 0
@@ -74,13 +100,15 @@ requires:
   Text::Perfide::BookPairs: 0
   Text::Perfide::BookSync: 0
   Text::Perfide::PartialAlign: 0
+  Text::Perfide::WordBags: 0
   Text::RewriteRules: 0
   TheSchwartz::Job: 0
   XML::Entities: 0
   XML::Twig: 0
   YAML::AppConfig: 0
+  YAML::Merge::Simple: 0
   utf8::all: 0
 resources:
   homepage: http://search.cpan.org/dist/Task-BeLike-Andrefs/
   repository: http://github.com/andrefs/task-belike-andrefs.git
-version: 0.05_13
+version: 0.05_14
