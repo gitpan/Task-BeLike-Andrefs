@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Task::BeLike::Andrefs;
 {
-  $Task::BeLike::Andrefs::VERSION = '0.05_15';
+  $Task::BeLike::Andrefs::VERSION = '0.05_16';
 }
 
 # ABSTRACT: For all the AndreFS wanna-bes
@@ -19,7 +19,7 @@ Task::BeLike::Andrefs - For all the AndreFS wanna-bes
 
 =head1 VERSION
 
-version 0.05_15
+version 0.05_16
 
 =head1 AUTHOR
 

@@ -37,6 +37,7 @@ my %WriteMakefileArgs = (
     "DBIx::Class::EncodedColumn" => 0,
     "DBIx::Class::TimeStamp" => 0,
     "DBIx::Migration" => 0,
+    "Dancer::Logger::ColorConsole" => 0,
     "Dancer::Plugin::Auth::RBAC::Credentials::DBIC" => 0,
     "Devel::REPL::Plugin::Colors" => 0,
     "Devel::REPL::Plugin::Commands" => 0,
@@ -53,6 +54,7 @@ my %WriteMakefileArgs = (
     "Devel::REPL::Plugin::OutputCache" => 0,
     "Devel::REPL::Plugin::Packages" => 0,
     "Devel::REPL::Plugin::ReadLineHistory" => 0,
+    "Devel::hdb" => 0,
     "Dist::Zilla" => 0,
     "Dist::Zilla::MintingProfile::Author::Andrefs" => 0,
     "Dist::Zilla::Plugin::AutoPrereqs" => 0,
@@ -93,6 +95,7 @@ my %WriteMakefileArgs = (
     "Pod::Weaver::Section::Changes" => 0,
     "Regexp::Debugger" => 0,
     "String::Approx" => 0,
+    "Task::CPAN::Reporter" => 0,
     "Task::Catalyst::Tutorial" => 0,
     "Task::Dancer" => 0,
     "Task::Kensho" => 0,
@@ -125,12 +128,26 @@ my %WriteMakefileArgs = (
     "YAML::Merge::Simple" => 0,
     "utf8::all" => 0
   },
-  "VERSION" => "0.05_15",
+  "TEST_REQUIRES" => {},
+  "VERSION" => "0.05_16",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};

@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132661'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -30,6 +30,7 @@ requires:
   DBIx::Class::EncodedColumn: 0
   DBIx::Class::TimeStamp: 0
   DBIx::Migration: 0
+  Dancer::Logger::ColorConsole: 0
   Dancer::Plugin::Auth::RBAC::Credentials::DBIC: 0
   Devel::REPL::Plugin::Colors: 0
   Devel::REPL::Plugin::Commands: 0
@@ -46,6 +47,7 @@ requires:
   Devel::REPL::Plugin::OutputCache: 0
   Devel::REPL::Plugin::Packages: 0
   Devel::REPL::Plugin::ReadLineHistory: 0
+  Devel::hdb: 0
   Dist::Zilla: 0
   Dist::Zilla::MintingProfile::Author::Andrefs: 0
   Dist::Zilla::Plugin::AutoPrereqs: 0
@@ -86,6 +88,7 @@ requires:
   Pod::Weaver::Section::Changes: 0
   Regexp::Debugger: 0
   String::Approx: 0
+  Task::CPAN::Reporter: 0
   Task::Catalyst::Tutorial: 0
   Task::Dancer: 0
   Task::Kensho: 0
@@ -120,4 +123,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Task-BeLike-Andrefs/
   repository: http://github.com/andrefs/task-belike-andrefs.git
-version: 0.05_15
+version: 0.05_16
